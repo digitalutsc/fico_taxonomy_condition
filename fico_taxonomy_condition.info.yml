@@ -1,0 +1,8 @@
+name: Field formatter conditions - taxonomy condition
+type: module
+core: 8.x
+core_version_requirement: '^8 || ^9'
+description: Adds taxonomy conditional functionality to fields.
+package: Fields
+dependencies:
+  - drupal:fico

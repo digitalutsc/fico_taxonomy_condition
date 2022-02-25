@@ -1,0 +1,23 @@
+<?php
+
+/**
+ * @file
+ * Contains fico_taxonomy_condition.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function fico_taxonomy_condition_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    case 'help.page.fico':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Adds taxonomy conditional functionality to fields.') . '</p>';
+      return $output;
+
+    default:
+  }
+}
